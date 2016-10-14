@@ -3,7 +3,7 @@
 // From: http://coursesweb.net/php-mysql/
 
 // path and name of the file
-$filetxt = 'test/formdata.txt';
+$filetxt = 'mytest/formdata.txt';
 
 // check if all form data are submited, else output error message
 if(isset($_POST['youname']) && isset($_POST['youemail']) && isset($_POST['studies']) && isset($_POST['civilstate'])) {
@@ -21,7 +21,7 @@ if(isset($_POST['youname']) && isset($_POST['youemail']) && isset($_POST['studie
     );
 
     // path and name of the file
-    $filetxt = 'test/formdata.txt';
+    $filetxt = 'mytest/formdata.txt';
 
     $arr_data = array();        // to store all form data
 
@@ -42,8 +42,8 @@ if(isset($_POST['youname']) && isset($_POST['youemail']) && isset($_POST['studie
 
     // saves the json string in "formdata.txt" (in "dirdata" folder)
     // outputs error message if data cannot be saved
-    if(file_put_contents('test/formdata.txt', $jsondata)) echo 'Data successfully saved';
-    else echo 'Unable to save data in "test/formdata.txt"';
+    if(file_put_contents('mytest/formdata.txt', $jsondata)) echo 'Data successfully saved';
+    else echo 'Unable to save data in "mytest/formdata.txt"';
   }
 }
 else echo 'Form fields not submited';
