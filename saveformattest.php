@@ -43,7 +43,7 @@ if(isset($_POST['youname']) && isset($_POST['youemail']) && isset($_POST['studie
     // saves the json string in "formdata.txt" (in "dirdata" folder)
     // outputs error message if data cannot be saved
     if(file_put_contents('test/formdata.txt', $jsondata)) echo 'Data successfully saved';
-    else echo 'Unable to save data in "dirdata/formdata.txt"';
+    else echo 'Unable to save data in "test/formdata.txt"';
   }
 }
 else echo 'Form fields not submited';
